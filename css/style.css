@@ -1,0 +1,153 @@
+:root{
+    --fuentePrincipal:'Lato', sans-serif;
+    --fuenteSecundaria:'Amatic SC', cursive;
+    --coloPrincipal: black;
+    --colorLetra:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: #efefefde;
+}
+
+/* GLOBALES */
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+    font-family: var(--fuentePrincipal);
+}
+h3{
+    font-size: 1.5rem;
+}
+
+/* Areglos principlales */
+.principal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--coloPrincipal);
+    opacity: .8;
+    /* position: fixed; */
+    width: 100%;
+}
+
+/* HEADER  */
+.header{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+.header__titulo{
+    font-family: var(--fuentePrincipal);
+    color: var(--colorLetra);
+    text-transform: uppercase;
+}
+.header__logo{
+    font-size: 3rem;
+    color: var(--colorLetra);
+}
+
+/* SEARCH  */
+.search{
+    padding: 1.5rem;
+    margin: 1rem;
+}
+.search__input{
+    width: 30rem;
+}
+.search__input, .search__boton{
+    font-size: 2.5rem;
+}
+
+/* Menu  */
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 1rem;
+}
+.menu__enlace{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--colorLetra);
+    padding: 1rem;
+    font-family: var(--colorLetra);
+}
+
+/* imagenes en movimiento */
+.fondo__img{
+   background-image: url("../img/ropa/imagen1.jpg");
+   background-repeat: no-repeat;
+   width: auto;
+   height: 100vmin;
+   background-size: cover;
+
+}
+/* MAIN  */
+.subtitulo{
+    margin: 2rem;
+}
+.grid{
+    margin: 3rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    /* background-color: var(--coloPrincipal); */
+}
+
+/* PRODUCTOS  */
+.producto{
+    width: 100%;
+    padding: 2rem;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+}
+
+.producto__img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.producto__caja{
+    display: grid;
+}
+.producto__nombre, .producto__precio{
+    font-size: 4rem;
+    font-family: var(--fuenteSecundaria);
+    text-align: center;
+    text-transform: uppercase;
+}
+.producto__boton{
+    border: none;
+    font-size: 3rem;
+    /* background-color: bisque; */
+    text-transform: uppercase;
+}
+/* PIE DE PAGINNA  */
+.footer{
+    background-color: antiquewhite;
+    text-align: center;
+}
+.footer__texto{
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-family: var(--fuenteSecundaria);
+    color: var(--coloPrincipal);
+}
+.footer__redes{
+    font-size: 6rem;   
+}
+.footer__icono{
+    padding: 0 3rem;
+    color: var(--coloPrincipal);
+}
